@@ -1,6 +1,6 @@
 import { Link } from "expo-router";
 import { View } from "react-native";
-import { Divider } from "react-native-paper";
+import { Divider, Text } from "react-native-paper";
 
 export default function Index() {
     return (
@@ -11,9 +11,13 @@ export default function Index() {
                 alignItems: "center",
             }}
         >
-            <Link href={"/game-reflexes"}>Gioco aritmetica</Link>
+            <Link href={"/game-reflexes"}>
+                <Text>Gioco aritmetica</Text>
+            </Link>
             <Divider style={{ margin: 10 }} />
-            <Link href={"/ASCII"}>ASCII</Link>
+            <Link href={"/ASCII"}>
+                <Text>ASCII</Text>
+            </Link>
         </View>
     );
 }

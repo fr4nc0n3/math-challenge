@@ -111,7 +111,6 @@ const styles = StyleSheet.create({
         justifyContent: "flex-start",
         alignItems: "center",
         padding: 24,
-        backgroundColor: "#f5f5f5",
     },
     card: {
         width: "100%",
