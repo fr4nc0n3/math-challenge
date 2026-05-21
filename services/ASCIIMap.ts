@@ -1,0 +1,77 @@
+export type ASCIICharValue = {
+    char: string;
+    value: number;
+};
+
+export const ASCII_MAP: ASCIICharValue[] = [
+    // Spazio
+    { char: " ", value: 32 },
+
+    // Numeri
+    { char: "0", value: 48 },
+    { char: "1", value: 49 },
+    { char: "2", value: 50 },
+    { char: "3", value: 51 },
+    { char: "4", value: 52 },
+    { char: "5", value: 53 },
+    { char: "6", value: 54 },
+    { char: "7", value: 55 },
+    { char: "8", value: 56 },
+    { char: "9", value: 57 },
+
+    // Maiuscole
+    { char: "A", value: 65 },
+    { char: "B", value: 66 },
+    { char: "C", value: 67 },
+    { char: "D", value: 68 },
+    { char: "E", value: 69 },
+    { char: "F", value: 70 },
+    { char: "G", value: 71 },
+    { char: "H", value: 72 },
+    { char: "I", value: 73 },
+    { char: "J", value: 74 },
+    { char: "K", value: 75 },
+    { char: "L", value: 76 },
+    { char: "M", value: 77 },
+    { char: "N", value: 78 },
+    { char: "O", value: 79 },
+    { char: "P", value: 80 },
+    { char: "Q", value: 81 },
+    { char: "R", value: 82 },
+    { char: "S", value: 83 },
+    { char: "T", value: 84 },
+    { char: "U", value: 85 },
+    { char: "V", value: 86 },
+    { char: "W", value: 87 },
+    { char: "X", value: 88 },
+    { char: "Y", value: 89 },
+    { char: "Z", value: 90 },
+
+    // Minuscole
+    { char: "a", value: 97 },
+    { char: "b", value: 98 },
+    { char: "c", value: 99 },
+    { char: "d", value: 100 },
+    { char: "e", value: 101 },
+    { char: "f", value: 102 },
+    { char: "g", value: 103 },
+    { char: "h", value: 104 },
+    { char: "i", value: 105 },
+    { char: "j", value: 106 },
+    { char: "k", value: 107 },
+    { char: "l", value: 108 },
+    { char: "m", value: 109 },
+    { char: "n", value: 110 },
+    { char: "o", value: 111 },
+    { char: "p", value: 112 },
+    { char: "q", value: 113 },
+    { char: "r", value: 114 },
+    { char: "s", value: 115 },
+    { char: "t", value: 116 },
+    { char: "u", value: 117 },
+    { char: "v", value: 118 },
+    { char: "w", value: 119 },
+    { char: "x", value: 120 },
+    { char: "y", value: 121 },
+    { char: "z", value: 122 },
+];
