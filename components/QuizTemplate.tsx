@@ -1,6 +1,6 @@
 import * as React from "react";
-import { useEffect, useState } from "react";
-import { StyleSheet, View } from "react-native";
+import { useEffect, useRef, useState } from "react";
+import { StyleSheet, TextInput, View } from "react-native";
 import {
     Button,
     Card,
@@ -21,6 +21,7 @@ export const QuizTemplate = ({
 }: QuizTemplateProps) => {
     const [userText, setUserText] = useState<string>("");
     const [right, setRight] = useState<boolean | null>(null);
+    const inputRef = useRef<TextInput | null>(null);
 
     useEffect(() => {
         if (right === null) return;
@@ -44,6 +45,9 @@ export const QuizTemplate = ({
         check();
         clearUserText();
         onChangeQuiz();
+        setTimeout(() => {
+            inputRef.current?.focus();
+        }, 100);
     };
 
     return (
@@ -66,12 +70,14 @@ export const QuizTemplate = ({
                     </Text>
 
                     <TextInputPaper
+                        ref={inputRef}
                         value={userText}
                         onChangeText={(txt) => setUserText(txt)}
                         placeholder="Scrivi qui..."
                         returnKeyType="done"
                         onSubmitEditing={() => confirmDone()}
                         submitBehavior="submit"
+                        caretHidden={true}
                     />
 
                     <Button

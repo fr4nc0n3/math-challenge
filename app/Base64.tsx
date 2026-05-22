@@ -22,7 +22,7 @@ export default function ASCIIQuizScreen() {
 
     const quiz: string = charToValue
         ? randomBase64.char
-        : `(ASCII) ${randomBase64.value}`;
+        : `(Base64) ${randomBase64.value}`;
     const solution: string = charToValue
         ? randomBase64.value.toString()
         : randomBase64.char;
