@@ -18,6 +18,10 @@ export default function Index() {
             <Link href={"/ASCII"}>
                 <Text>ASCII</Text>
             </Link>
+            <Divider style={{ margin: 10 }} />
+            <Link href={"/Base64"}>
+                <Text>Base64</Text>
+            </Link>
         </View>
     );
 }
